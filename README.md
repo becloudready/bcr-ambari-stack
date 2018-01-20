@@ -26,5 +26,7 @@ VERSION=`hdp-select status hadoop-client | sed 's/hadoop-client - \([0-9]\.[0-9]
 sudo ln -s /var/lib/ambari-server/resources/ambari-nifi /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/APACHENIFI
 ```
 
+# Issues
 
+Please raise issue with full logs and step to reproduce.
 
