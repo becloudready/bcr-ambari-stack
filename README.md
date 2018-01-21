@@ -42,6 +42,12 @@ Once you restart the Ambari, the new Apache NiFi will show up in Ambari service 
 
 ![alt text](screenshots/Nifi-service.png "Apache NiFi 1.4 selection screen")
 
+On the installation step, you need to provide the proxy servers, if you are behind firewall. Very handy for corporate environment with heavy firewalling.
+
+![alt text](screenshots/Nifi-http-proxy.png "Apache NiFi 1.4 selection screen")
+
+Please put no_proxy, if you don't have any proxy otherwise it wont work.
+
 
 # Issues
 
