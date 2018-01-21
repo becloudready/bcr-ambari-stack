@@ -30,7 +30,7 @@
                     <commandScript>
                         <script>scripts/master.py</script>
                         <scriptType>PYTHON</scriptType>
-                        <timeout>600</timeout>
+                        <timeout>800</timeout>
                     </commandScript>
                 </component>
             </components>
