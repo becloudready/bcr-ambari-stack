@@ -42,13 +42,13 @@ sudo ln -s /var/lib/ambari-server/resources/ambari-nifi /var/lib/ambari-server/r
 ambari-server restart
 ```
 
-# Service Selection
+# Service Selection for NiFi 1.4
 
 Once you restart the Ambari, the new Apache NiFi will show up in Ambari service selection screen like this
 
 ![alt text](screenshots/Nifi-service.png "Apache NiFi 1.4 selection screen")
 
-On the installation step, you need to provide the proxy servers, if you are behind firewall. Very handy for corporate environment with heavy firewalling.
+Proxy selection for NiFi 1.4 you need to provide the proxy servers, if you are behind firewall. Very handy for corporate environment with heavy firewalling.
 
 ![alt text](screenshots/Nifi-http-proxy.png "Apache NiFi 1.4 selection screen")
 
