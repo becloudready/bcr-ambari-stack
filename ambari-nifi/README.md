@@ -46,11 +46,11 @@ ambari-server restart
 
 Once you restart the Ambari, the new Apache NiFi will show up in Ambari service selection screen like this
 
-![alt text](screenshots/Nifi-service.png "Apache NiFi 1.4 selection screen")
+![alt text](../screenshots/Nifi-service.png "Apache NiFi 1.4 selection screen")
 
 Proxy selection for NiFi 1.4 you need to provide the proxy servers, if you are behind firewall. Very handy for corporate environment with heavy firewalling.
 
-![alt text](screenshots/Nifi-Config-screen.png "Apache NiFi 1.4 selection screen")
+![alt text](../screenshots/Nifi-Config-screen.png "Apache NiFi 1.4 selection screen")
 
 Please put no_proxy, if you don't have any proxy otherwise it wont work.
 
