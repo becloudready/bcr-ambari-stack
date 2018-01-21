@@ -12,7 +12,7 @@ You need to have Ambari server installed. This package works with both HDF and H
 2. Ambari 2.x
 3. HDP/HDF 2.x/3.x
 
-# Installation
+# Installation Example for HDF 3.0
 
 Installing HDF 3.0 if you dont have it already. Only use --purge if you want to remove all other mpacks.
 
@@ -31,11 +31,15 @@ ln -s /var/lib/ambari-server/resources/bcr-ambari-stack/ambari-nifi /var/lib/amb
 ambari-server restart
 
 ```
+# Installation Example for HDP
+
 Check what version of HDF or HDP is intalled in your system. Example of installing on HDP
 
 ```
 VERSION=`hdp-select status hadoop-client | sed 's/hadoop-client - \([0-9]\.[0-9]\).*/\1/'`
 sudo ln -s /var/lib/ambari-server/resources/ambari-nifi /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/APACHENIFI
+
+ambari-server restart
 ```
 
 # Service Selection
