@@ -57,6 +57,8 @@ Please put no_proxy, if you don't have any proxy otherwise it wont work.
 
 # Issues
 
+1. NiFi Package is bit big, so if you have slow internet connection give it time to download at installation phase.
+
 Please raise issue with full logs and step to reproduce.
 
 # More Info
