@@ -10,7 +10,7 @@ You need to have Ambari server installed. This package works with both HDF and H
 
 1. CentOS/RHEL 7
 2. Ambari 2.x
-3. HDP/HDF
+3. HDP/HDF 2.x/3.x
 
 # Installation
 
@@ -37,6 +37,8 @@ Check what version of HDF or HDP is intalled in your system. Example of installi
 VERSION=`hdp-select status hadoop-client | sed 's/hadoop-client - \([0-9]\.[0-9]\).*/\1/'`
 sudo ln -s /var/lib/ambari-server/resources/ambari-nifi /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/APACHENIFI
 ```
+
+# Service Selection
 
 Once you restart the Ambari, the new Apache NiFi will show up in Ambari service selection screen like this
 
