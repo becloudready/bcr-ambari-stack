@@ -12,7 +12,7 @@ You need to have Ambari server installed. This package works with both HDF and H
 2. Ambari 2.x
 3. HDP/HDF 2.x/3.x
 
-# Installation
+# Installation Example for HDF 3.0
 
 Installing HDF 3.0 if you dont have it already. Only use --purge if you want to remove all other mpacks.
 
@@ -31,20 +31,24 @@ ln -s /var/lib/ambari-server/resources/bcr-ambari-stack/ambari-nifi /var/lib/amb
 ambari-server restart
 
 ```
+# Installation Example for HDP
+
 Check what version of HDF or HDP is intalled in your system. Example of installing on HDP
 
 ```
 VERSION=`hdp-select status hadoop-client | sed 's/hadoop-client - \([0-9]\.[0-9]\).*/\1/'`
 sudo ln -s /var/lib/ambari-server/resources/ambari-nifi /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/APACHENIFI
+
+ambari-server restart
 ```
 
-# Service Selection
+# Service Selection for NiFi 1.4
 
 Once you restart the Ambari, the new Apache NiFi will show up in Ambari service selection screen like this
 
 ![alt text](screenshots/Nifi-service.png "Apache NiFi 1.4 selection screen")
 
-On the installation step, you need to provide the proxy servers, if you are behind firewall. Very handy for corporate environment with heavy firewalling.
+Proxy selection for NiFi 1.4 you need to provide the proxy servers, if you are behind firewall. Very handy for corporate environment with heavy firewalling.
 
 ![alt text](screenshots/Nifi-http-proxy.png "Apache NiFi 1.4 selection screen")
 
@@ -54,4 +58,12 @@ Please put no_proxy, if you don't have any proxy otherwise it wont work.
 # Issues
 
 Please raise issue with full logs and step to reproduce.
+
+# More Info
+
+https://www.becloudready.com
+
+To install Elasticserch
+
+https://www.becloudready.com/forum/articles-1/writing-custom-ambari-service-for-hadoop-hdp-or-hdf-cluster
 
