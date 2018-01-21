@@ -1,0 +1,12 @@
+
+clientPort={{ zk_port }}
+initLimit=10
+autopurge.purgeInterval=24
+syncLimit=5
+tickTime=2000
+dataDir=./state/zookeeper
+autopurge.snapRetainCount=30
+
+{% for zookeeper_server in zookeeper_servers.split(',') %}
+server.{{ loop.index }} = {{ zookeeper_server }}
+{% endfor %}

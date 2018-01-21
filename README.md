@@ -14,6 +14,13 @@ You need to have Ambari server installed. This package works with both HDF and H
 
 # Installation
 
+Installing HDF 3.0 if you dont have it already
+
+```
+wget https://s3.amazonaws.com/public-repo-1.hortonworks.com/HDF/centos7/3.x/updates/3.0.2.0/tars/hdf_ambari_mp/hdf-ambari-mpack-3.0.2.0-76.tar.gz /tmp
+ambari-server install-mpack --mpack=/tmp/hdf-ambari-mpack-3.0.2.0-76.tar.gz --purge --verbose
+```
+
 ```
 cd /var/lib/ambari-server/resources/
 git clone https://github.com/becloudready/bcr-ambari-stack.git
