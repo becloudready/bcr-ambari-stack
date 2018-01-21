@@ -63,3 +63,7 @@ Please raise issue with full logs and step to reproduce.
 
 https://www.becloudready.com
 
+To install Elasticserch
+
+https://www.becloudready.com/forum/articles-1/writing-custom-ambari-service-for-hadoop-hdp-or-hdf-cluster
+
