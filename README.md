@@ -2,6 +2,10 @@
 
 Custom Ambari stack for BigData Services. This repo includes some of the custom service made for ambari services. This is not supported by Hortonworks.
 
+# More documentation 
+
+https://www.becloudready.com/forum/resources/ambari-nifi-1-4-custom-service-for-hortonworks-data-flow-hdf
+
 # Prerequisit
 
 You need to have Ambari server installed. This package works with both HDF and HDP. You should have access to the ambari server linux box.
@@ -63,9 +67,9 @@ Please raise issue with full logs and step to reproduce.
 
 # More Info
 
-https://www.becloudready.com
+https://www.becloudready.com/forum/resources
 
 To install Elasticserch
 
-https://www.becloudready.com/forum/articles-1/writing-custom-ambari-service-for-hadoop-hdp-or-hdf-cluster
+https://www.becloudready.com/forum/resources/writing-custom-ambari-service-for-hadoop-hdp-or-hdf-cluster
 
